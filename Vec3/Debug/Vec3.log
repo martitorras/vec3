@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\martí\desktop\vec3\vec3\source.cpp(8): error C3867: 'vec3<int>::print': non-standard syntax; use '&' to create a pointer to member
+c:\users\martí\desktop\vec3\vec3\source.cpp(9): error C3867: 'vec3<int>::is_zero': non-standard syntax; use '&' to create a pointer to member
+c:\users\martí\desktop\vec3\vec3\source.cpp(11): error C3867: 'vec3<int>::normalize': non-standard syntax; use '&' to create a pointer to member
+c:\users\martí\desktop\vec3\vec3\source.cpp(12): error C3867: 'vec3<int>::print': non-standard syntax; use '&' to create a pointer to member
+c:\users\martí\desktop\vec3\vec3\source.cpp(13): error C3867: 'vec3<int>::zero': non-standard syntax; use '&' to create a pointer to member
+c:\users\martí\desktop\vec3\vec3\source.cpp(14): error C3867: 'vec3<int>::is_zero': non-standard syntax; use '&' to create a pointer to member
