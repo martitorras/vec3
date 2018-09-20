@@ -15,8 +15,10 @@ public:
 		y = Yenter;
 		z = Zenter;
 	}
-	vec3(T1 value) {
-		x = y = z = value;
+	vec3(const vec3& vec) {
+		x = vec.x;
+		y = vec.y;
+		z = vec.z;
 	}
 	~vec3() {};
 
@@ -67,21 +69,16 @@ public:
 		this->z = 0;
 	}
 
-	bool is_zero(){
+	bool is_zero() const{
 		return (this->x == 0 && this->y == 0 && this->z == 0)
 	}
 
-	T1 distance_to(const vec3 &v1, const vec3 &v2)
-	{
+	T1 distance_to(const vec3 &v1, const vec3 &v2) const{
 		T1 distancex = v2.x - v1.x;
 		T1 distancey = v2.y - v1.y;
 		T1 distancez = v2.z - v1.z;
 
 		return sqrt(distancex * distancex + distancey * distancey + distancez * distancez);
-	}
-
-	void print() {
-		cout << this->x << ", " << this->y << ", " << this->z << endl;
 	}
 
 };
