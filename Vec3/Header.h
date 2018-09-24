@@ -2,15 +2,16 @@
 #define _HEADER_H_
 #include <iostream>
 
-template<class T1>
+template<class var>
 class vec3 {
-private:
-	T1 x, y, z;
+
 public:
+	var x, y, z;
+
 	vec3() {
 		x = y = z = 0;
 	}
-	vec3(T1 Xenter, T1 Yenter, T1 Zenter) {
+	vec3(var Xenter, var Yenter, var Zenter) {
 		x = Xenter;
 		y = Yenter;
 		z = Zenter;
@@ -23,13 +24,11 @@ public:
 	~vec3() {};
 
 	vec3 operator+ (const vec3& vec) const {
-		vec3<T1> res(this->x + vec.x, this->y + vec.y, this->z + vec.z);
-		return res;
+		return (this->x + vec.x, this->y + vec.y, this->z + vec.z);
 	}
 
 	vec3 operator- (const vec3& vec) const {
-		vec3<T1> res(this->x - vec.x, this->y - vec.y, this->z - vec.z);
-		return res;
+		return (this->x - vec.x, this->y - vec.y, this->z - vec.z);
 	}
 
 	void operator+= (const vec3& vec) {
@@ -73,7 +72,7 @@ public:
 		return (this->x == 0 && this->y == 0 && this->z == 0)
 	}
 
-	T1 distance_to(const vec3 &v1, const vec3 &v2) const{
+	var distance_to(const vec3 &v1, const vec3 &v2) const{
 		T1 distancex = v2.x - v1.x;
 		T1 distancey = v2.y - v1.y;
 		T1 distancez = v2.z - v1.z;
